@@ -1,0 +1,51 @@
+* {
+    font-family: "Microsoft JhengHei UI", "Microsoft YaHei UI", "Courier New", sans-serif;
+}
+.main_container {
+    margin: 20px;
+    padding: 20px;
+    background: #eee;
+    border: solid 1px #999;
+    overflow: auto;
+    zoom: 1;
+    min-width: 700px;
+}
+img {
+    width: 80px;
+    height: 80px;
+    border: solid 1px #999;
+}
+.team_logo {
+    padding: 20px;
+    float: left;
+    width: 160px;
+    overflow: auto;
+    zoom: 1;
+    background: #ffffff;
+    border: solid 1px #999;
+}
+.team_logo > img {
+    float: left;
+}
+.team_logo > p {
+    text-align: center;
+    width: 180px;
+}
+.team_description {
+    margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
+    min-width: 300px;
+    border: solid 1px #999;
+    background: #ffffff;
+}
+.member_logo {
+    float: right;
+    border: solid 1px #999;
+    width: 120px;
+    background: #ffffff;
+}
+.member_logo > img {
+    margin: 10px auto;
+    display: block;
+}
