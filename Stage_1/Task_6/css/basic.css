@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #5D5D5D;
+}
+#paper-wrapper {
+    width: 980px;
+    height: 1386px;
+    padding: 0 44px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#logo {
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    position: relative;
+    float: left;
+}
+#logo_text {
+    font-size: 12px;
+    color: #fff;
+    font-family: "黑体", "Adobe 黑体 Std R", sans-serif;
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+}
+#date_text {
+    font-size: 12px;
+    color: #d45d5c;
+    font-family: "黑体", "Adobe 黑体 Std R", sans-serif;
+    float: right;
+    position: relative;
+    top: 43px;
+}
+.line {
+    width: 892px;
+    height: 2px;
+    background-color: #938e8c;
+    clear: both;
+}
+.head-line {
+    margin-bottom: 35px;
+}
+.main-photo-wrapper {
+    float: left;
+    width: 641px;
+    height: 301px;
+    position: relative;
+}
+.main-photo-wrapper > img{
+    width: 641px;
+    height: 301px;
+}
+.mask {
+    position: absolute;
+    width: 191px;
+    height: 301px;
+}
+.green-mask {
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 140, 89, 0.5);
+}
+.red-mask {
+    top: 0;
+    right: 0;
+    background-color: rgba(204, 117, 128, 0.5);
+}
+.score-wrapper {
+    float: right;
+    width: 203px;
+    height: 301px;
+}
+#red-line {
+    width: 203px;
+    height: 2px;
+    background-color: #cc8091;
+    margin-bottom: 3px;
+}
+.score-title {
+    font-size: 24px;
+    color: #000;
+    font-family: "微软雅黑", sans-serif;
+    line-height: 40px;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+.score-title-second {
+    margin-top: -10px;
+}
+#score-text {
+    font-size: 12px;
+    color: #676767;
+    font-family: "楷体", "Adobe 楷体 Std R", sans-serif;
+    line-height: 10px;
+    font-style: italic;
+}
+#score {
+    font-size: 116px;
+    color: #75b86b;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+#red-number {
+    font-size: 55px;
+    color: #cc8091;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    float: left;
+    margin-left: 5px;
+    margin-top: -15px;
+}
+#css {
+    font-size: 14px;
+    color: #cc8091;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    float: left;
+    line-height: 12px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#css-small {
+    font-size: 8px;
+    color: rgba(35, 24, 21, 0.4);
+}
