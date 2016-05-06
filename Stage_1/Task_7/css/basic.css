@@ -45,8 +45,9 @@ header a, header a:visited {
     font-size: 14px;
     padding: 15px 20px;
     font-family: "微软雅黑", sans-serif;
+    border-bottom: solid 0 #e74f4d;
 }
-header a:active {
+header a:hover {
     color: #e74f4d;
     border-bottom: solid 5px #e74f4d;
     transition-duration: 0.3s;
@@ -112,4 +113,43 @@ header li > .login-text {
     position: absolute;
     top: 550px;
     left: 165px;
+}
+
+/* 简介栏 */
+.intro {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+.intro-block {
+    width: 25%;
+    height: 100%;
+    padding: 3.5% 7.2% 4% 7.2%;
+    float: left;
+}
+.intro img {
+    margin-bottom: 25%;
+}
+.intro p {
+    font-size: 14px;
+    font-family: "Adobe 黑体 Std R", "黑体", sans-serif;
+    color: #767777;
+    line-height: 18px;
+}
+.intro .short-line {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #767777;
+    top: 55%;
+}
+.intro .short-line1 {
+    left: 25%;
+}
+.intro .short-line2 {
+    left: 50%;
+}
+.intro .short-line3 {
+    left: 75%;
 }
