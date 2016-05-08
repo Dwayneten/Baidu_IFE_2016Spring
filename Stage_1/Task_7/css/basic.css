@@ -153,3 +153,66 @@ header li > .login-text {
 .intro .short-line3 {
     left: 75%;
 }
+
+/* 问句栏 */
+.question:before, .question:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.question {
+    width: 100%;
+    height: 350px;
+    background-color: #ededed;
+    clear: both;
+}
+.question img {
+    width: 91px;
+    height: 92px;
+    margin: 85px auto 50px auto;
+    display: block;
+}
+.question p {
+    font-size: 60px;
+    font-family: "Adobe 黑体 Std R", "黑体", sans-serif;
+    color: rgba(50, 51, 51, 0.5);
+    line-height: 56px;
+    text-align: center;
+}
+
+/* 查找城市活动信息栏 */
+.search:before, .search:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.search {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/map.jpg");
+    background-size: 100% auto;
+    position: relative;
+}
+.search .title {
+    font-size: 21px;
+    color: #fff;
+    font-family: "微软雅黑", sans-serif;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 50px;
+}
+.search .white-line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+.search p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: "微软雅黑", sans-serif;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
