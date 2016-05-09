@@ -7,6 +7,11 @@
     width: 100%;
     min-width: 1280px;
 }
+section:before, section:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /* 顶部导航条 */
 header {
@@ -155,11 +160,6 @@ header li > .login-text {
 }
 
 /* 问句栏 */
-.question:before, .question:after {
-    content: "";
-    clear: both;
-    display: table;
-}
 .question {
     width: 100%;
     height: 350px;
@@ -181,11 +181,6 @@ header li > .login-text {
 }
 
 /* 查找城市活动信息栏 */
-.search:before, .search:after {
-    content: "";
-    clear: both;
-    display: table;
-}
 .search {
     width: 100%;
     height: 350px;
@@ -215,4 +210,58 @@ header li > .login-text {
     line-height: 24px;
     text-align: center;
     margin-top: 10px;
+}
+
+/* 活动展示栏 */
+.activity {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(247, 247, 247);
+}
+.activity .wrapper {
+    width: calc(900px + 8vw);
+    height: 100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.activity .content {
+    display: inline-block;
+    width: 210px;
+    height: 400px;
+    margin: 0 1vw;
+}
+.activity img {
+    width: 203px;
+    height: 312px;
+    border: solid #fff;
+    border-width: 10px 5px;
+    box-shadow: 0 0 1px #5d5d5d;
+}
+.activity .title {
+    font-size: 22px;
+    color: #646464;
+    font-family: "微软雅黑", sans-serif;
+}
+.activity p {
+    font-size: 18px;
+    color: #9f9f9f;
+    font-family: "微软雅黑", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.activity .top-title {
+    font-size: 28px;
+    color: #646464;
+    font-family: "微软雅黑", sans-serif;
+    letter-spacing: 20px;
+    text-indent: 0.5em;
+}
+.activity .top-text {
+    font-size: 18px;
+    color: #9f9f9f;
+    font-family: "微软雅黑", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
 }
