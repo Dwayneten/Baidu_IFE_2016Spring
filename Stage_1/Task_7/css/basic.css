@@ -285,3 +285,76 @@ header li > .login-text {
     height: 100%;
     position: relative;
 }
+.info .left-block .content {
+    display: block;
+    width: 500px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: "微软雅黑", sans-serif;
+}
+.info .left-block .cn-title {
+    font-size: 50px;
+
+}
+.info .left-block .title {
+    font-size: 160px;
+}
+.info .left-block p {
+    font-size: 24px;
+}
+.info .left-block .triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 30px solid #fff;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info .right-block .content {
+    display: block;
+    width: 400px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-family: "微软雅黑", sans-serif;
+}
+.info .right-block .title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.info .right-block .line {
+    font-style: oblique;
+    margin: 0 8px 0 3px;
+}
+.info .right-block .num {
+    color: #f33;
+
+}
+.info .right-block .content-text {
+    font-size:  16px;
+    line-height: 26px;
+    font-family: "Adobe 宋体 Std L", "宋体", sans-serif;
+    color: #aaa;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.info .right-block .btn {
+    border: solid 1px #f33;
+    color: #f33;
+    font-family: "微软雅黑", sans-serif;
+    width: 120px;
+    height: 35px;
+    line-height: 32px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+.info .right-block .circle {
+    font-size: 28px;
+    letter-spacing: 20px;
+    text-indent: 20px;
+    color: #aaa;
+}
