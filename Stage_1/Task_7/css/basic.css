@@ -358,3 +358,98 @@ header li > .login-text {
     text-indent: 20px;
     color: #aaa;
 }
+
+/* 查看更多栏 */
+.more {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.more .left-block1, .more .left-block2 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.more .left-block1 {
+    background-color: #e7504d;
+}
+.more .left-block2 {
+    background-color: #fff;
+}
+.more .content {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 200px auto 0 auto;
+    text-align: center;
+    font-family: "微软雅黑", sans-serif;
+}
+.more .left-block1 p {
+    font-size: 24px;
+    color: #fff;
+    line-height: 32px;
+}
+.more .left-block2 p {
+    font-size: 24px;
+    color: #000;
+    line-height: 32px;
+}
+.more .left-block1 .line {
+    width: 40px;
+    height: 2px;
+    display: block;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.more .left-block2 .line {
+    width: 40px;
+    height: 2px;
+    display: block;
+    margin: 20px auto;
+    background-color: #000;
+}
+.more a {
+    font-size: 24px;
+    font-family: "微软雅黑", sans-serif;
+    width: 200px;
+    height: 42px;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.more .left-block1 a {
+    border: solid 1px #fff;
+    color: #fff;
+}
+.more .left-block2 a {
+    border: solid 1px #e7504d;
+    color: #e7504d;
+}
+.more .right-block {
+    float: right;
+    width: 40%;
+    height: 100%;
+    background-image: url("../img/section7-bg.jpg");
+    background-size: 100% auto;
+    position: relative;
+}
+.more .right-block .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.more .right-block .triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid #fff;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
