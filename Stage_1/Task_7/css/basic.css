@@ -539,6 +539,7 @@ header li > .login-text {
 }
 .form textarea {
     width: calc(100% - 20px);
+    resize: none;
     height: 130px;
     padding-top: 10px;
 }
@@ -551,4 +552,107 @@ header li > .login-text {
     font-size: 16px;
     color: #333;
     font-family: "微软雅黑", sans-serif;
+}
+
+/* 联系栏 */
+.contact {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    background-color: #32363e;
+}
+.contact p {
+    font-size: 21px;
+    color: #fff;
+    font-family: "Adobe 黑体 Std R", "黑体", sans-serif;
+    margin-top: 100px;
+    line-height: 42px;
+}
+.contact p+p {
+    font-size: 12px;
+    color: #fff;
+    font-family: "Adobe 宋体 Std L", "宋体", sans-serif;
+    margin: 0;
+    line-height: 20px;
+}
+.contact .input-wrapper {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 600px;
+    height: 80px;
+}
+.contact .input-wrapper:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.contact input {
+    width: 450px;
+    height: 40px;
+    background-color: #fff;
+    padding-left: 10px;
+    margin-left: 30px;
+    border: none;
+    display: block;
+    float: left;
+}
+.contact button {
+    width: 90px;
+    height: 40px;
+    margin: 0;
+    background-color: #6f7178;
+    font-size: 16px;
+    color: #fff;
+    font-family: "微软雅黑", sans-serif;
+    border: none;
+    display: block;
+    float: left;
+}
+.contact .contact-icon {
+    height: 25px;
+    background-image: url("../img/contact-logo.png");
+    display: inline-block;
+    margin: 0 15px;
+}
+.contact .contact-icon1 {
+    background-position: 0 0;
+    width: 24px;
+}
+.contact .contact-icon2 {
+    background-position: -52px 0;
+    width: 29px;
+}
+.contact .contact-icon3 {
+    background-position: -108px 0;
+    width: 29px;
+}
+.contact .contact-icon4 {
+    background-position: -157px 0;
+    width: 24px;
+}
+
+/* 页脚 */
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #2f2f38;
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    font-family: "Adobe 宋体 Std L", "宋体", sans-serif;
+}
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+footer a {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #fff;
 }
