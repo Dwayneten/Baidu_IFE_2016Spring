@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.generate-columns(@n, @i: 1) when (@i <= @n) {
+  @media (min-width: 768px) {
+    .col-md-@{i} {
+      width: (100% / @n * @i);
+      min-height: 1px;
+      padding: 12px;
+      float: left;
+    }
+  }
+  @media (max-width: 767px) {
+    .col-sm-@{i} {
+      width: (100% / @n * @i);
+      min-height: 1px;
+      padding: 12px;
+      float: left;
+    }
+  }
+  .generate-columns(@n, (@i + 1));
+}
+.generate-columns(12);
+div {
+  background-color: #eee;
+  border: solid 1px #999;
+  margin: 20px 0;
+  height: 50px;
+}
