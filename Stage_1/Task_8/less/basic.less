@@ -1,29 +1,36 @@
+@bgcolor: #eee;
+@brcolor: #999;
+@half-gutter: 10px;
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.generate-columns(@n, @i: 1) when (@i <= @n) {
-  @media (min-width: 768px) {
-    .col-md-@{i} {
-      width: (100% / @n * @i);
-      min-height: 1px;
-      padding: 12px;
-      float: left;
-    }
+.generate-columns(@mdFlag, @n, @i: 1) when (@i <= @n) {
+  .col-md-@{i} when (@mdFlag) {
+    width: (100% / @n * @i);
   }
-  @media (max-width: 767px) {
-    .col-sm-@{i} {
-      width: (100% / @n * @i);
-      min-height: 1px;
-      padding: 12px;
-      float: left;
-    }
+  .col-sm-@{i} when (@mdFlag = false) {
+    width: (100% / @n * @i);
   }
-  .generate-columns(@n, (@i + 1));
+  .generate-columns(@mdFlag, @n, (@i + 1));
 }
-.generate-columns(12);
-div {
-  background-color: #eee;
-  border: solid 1px #999;
-  margin: 20px 0;
+@media (min-width: 768px) {
+  .generate-columns(true, 12);
+}
+@media (max-width: 767px) {
+  .generate-columns(false, 12);
+}
+[class*='col'] {
+  min-height: 1px;
+  padding: @half-gutter;
+  float: left;
+}
+.inner {
+  background-color: @bgcolor;
+  border: solid 1px @brcolor;
   height: 50px;
+}
+.container {
+  padding: @half-gutter;
 }
