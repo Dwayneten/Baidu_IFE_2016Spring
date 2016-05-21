@@ -115,6 +115,21 @@ nav {
   left: @sidebar-width;
   top: @header-height;
   background-color: #fff;
+  padding-left: 20px;
+  & p {
+    line-height: @nav-height;
+    font-size: 12px;
+    font-family: "SimHei", "微软雅黑", sans-serif;
+    color: #aaa;
+  }
+  & a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #aaa;
+  }
+  & a:hover, & a:last-child {
+    color: #6898c2;
+  }
 }
 
 /* content part */
