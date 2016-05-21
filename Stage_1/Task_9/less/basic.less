@@ -10,11 +10,18 @@
     clear: both;
   }
 }
+.sprite(@positionX, @width, @height) {
+  background-image: url("../img/img-sprite.png");
+  background-position-x: @positionX;
+  width: @width;
+  height: @height;
+}
 
 /* fixed part */
 @header-height: 55px;
 @sidebar-width: 260px;
 @nav-height: 30px;
+/* header */
 header {
   width: 100%;
   height: @header-height;
@@ -22,7 +29,77 @@ header {
   left: 0;
   top: 0;
   background-color: #228ac0;
+  .clearfix;
 }
+header .logo {
+  .sprite(0px, 36px, 36px);
+  margin-top: 10px;
+  margin-left: 50px;
+  float: left;
+}
+header a {
+  font-size: 12px;
+  font-family: "黑体", "Adobe Heiti Std", sans-serif;
+  color: #fff;
+  line-height: @header-height;
+  width: 42px;
+  display: block;
+  float: right;
+  text-decoration: none;
+  margin-right: 80px;
+  position: relative;
+  &:visited {
+    color: #fff;
+  }
+  & .login-icon {
+    .sprite(-46px, 16px, 16px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  & .text {
+    padding-left: 18px;
+  }
+}
+header .search-box {
+  float: right;
+  position: relative;
+  width: 300px;
+  height: @header-height;
+  margin-right: 20px;
+  & span {
+    .sprite(-302px, 17px, 17px);
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    transition-property: left, width;
+    transition-duration: 0.3s;
+  }
+  & input {
+    border: none;
+    border-radius: 12.5px;
+    width: 200px;
+    height: 25px;
+    color: #aaa;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    padding-left: 30px;
+    transition-property: left, width;
+    transition-duration: 0.3s;
+  }
+  & input:focus {
+    width: 300px;
+    left: 0;
+  }
+  & input:focus + span {
+    left: 10px;
+  }
+}
+/* sidebar */
 .sidebar {
   width: @sidebar-width;
   height: calc(~"100vh -" @header-height);
@@ -45,6 +122,7 @@ nav {
 .bg-container {
   width: 100vw;
   height: 100vh;
+  min-width: 1280px;
   background-color: #eee;
   overflow: scroll;
   zoom: 1;
@@ -147,7 +225,7 @@ nav {
   border-radius: 10px;
 }
 
-/* panel row 1 */
+/* panel row 2 */
 .row2 {
   height: 355px;
 }
