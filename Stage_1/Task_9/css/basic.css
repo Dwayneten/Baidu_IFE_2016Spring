@@ -327,7 +327,123 @@ nav a:last-child {
   width: 100%;
   height: 90px;
   background-color: #fff;
+  font-size: 12px;
+  font-family: "SimHei", "黑体", sans-serif;
+  color: #aaaaaa;
+  line-height: 26px;
   margin-bottom: 10px;
+}
+.content-search .select-arrow {
+  display: block;
+  position: absolute;
+}
+.content-search .col-1 {
+  width: 160px;
+  height: 100%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.content-search .col-1 p {
+  display: inline-block;
+}
+.content-search .col-1 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70px;
+  height: 25px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  background-image: url("../img/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) 50%;
+  background-size: 9px, 7px;
+}
+.content-search .col-2 {
+  width: 220px;
+  height: 100%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+.content-search .col-2 .row {
+  float: left;
+  margin-bottom: 5px;
+}
+.content-search .col-2 .row p {
+  display: inline-block;
+}
+.content-search .col-2 .row select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 115px;
+  height: 25px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  background-image: url("../img/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) 50%;
+  background-size: 9px, 7px;
+}
+.content-search .col-2 a {
+  background-image: url("../img/img-sprite.png");
+  background-position-x: -329px;
+  width: 28px;
+  height: 39px;
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 6px;
+  padding-left: 14px;
+}
+.content-search .col-3 {
+  width: 350px;
+  height: 100%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.content-search .col-3 .row {
+  float: left;
+  margin-bottom: 5px;
+}
+.content-search .col-3 .row p {
+  display: inline-block;
+  margin: 0 10px;
+}
+.content-search .col-3 .row select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 25px;
+  padding-left: 10px;
+  display: inline-block;
+  background-image: url("../img/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) 50%;
+  background-size: 9px, 7px;
+}
+.content-search .col-3 .row .short-select {
+  width: 70px;
+}
+.content-search .btn-search {
+  width: 50px;
+  height: 25px;
+  display: block;
+  background-color: #388ac1;
+  color: #fff;
+  margin: 35px 0 0 10px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
 }
 /* record section */
 .content-record {
