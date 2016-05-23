@@ -9,7 +9,7 @@ var cssDist = './css';
 
 gulp.task('less', function () {
     return gulp.src(lesDist)
-        // .pipe(watch(lesDist))
+        .pipe(watch(lesDist))
         .pipe(less())
         .pipe(gulp.dest(cssDist))
         .pipe(rename({ suffix: '.min' }))

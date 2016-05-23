@@ -30,6 +30,7 @@ header {
   top: 0;
   background-color: #228ac0;
   .clearfix;
+  z-index: 100;
 }
 header .logo {
   .sprite(0px, 36px, 36px);
@@ -108,6 +109,7 @@ header .search-box {
   top: @header-height;
   background-color: #2a2e3d;
   color: #6e8095;
+  z-index: 100;
 }
 .avatar {
   padding: 20px 30px 0 30px;
@@ -254,6 +256,7 @@ nav {
   top: @header-height;
   background-color: #fff;
   padding-left: 20px;
+  z-index: 100;
   & p {
     line-height: @nav-height;
     font-size: 12px;
@@ -419,6 +422,10 @@ nav {
   background-color: #fff;
   float: left;
   margin-right: 5px;
+  line-height: 65px;
+  font-size: 24px;
+  color: #aaa;
+  text-align: center;
 }
 .record-pane {
   width: 110px;
@@ -426,12 +433,47 @@ nav {
   background-color: #fff;
   float: left;
   margin-right: 5px;
+  border-top: solid 3px #fff;
+  p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #333;
+    font-family: "微软雅黑", sans-serif;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .price {
+    font-size: 21px;
+    font-family: "微软雅黑", sans-serif;
+    color: #ec6500;
+    & span {
+      font-size: 14px;
+      color: #ccc;
+    }
+  }
+  &.active, &:hover {
+    border-top: solid 3px #4288c8;
+  }
 }
 .record-query {
   width: 130px;
   height: 100%;
   background-color: #fff;
   float: left;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-family: "微软雅黑", sans-serif;
+  padding-top: 25px;
+  padding-left: 55px;
+  & span {
+    top: 20px;
+    left: 15px;
+    .sprite(-72px, 33px, 33px);
+    position: absolute;
+  }
 }
 
 /* statistic section */
@@ -455,10 +497,54 @@ nav {
     margin-left: 30px;
   }
 }
-[class*='count-block'] {
+[class^='count-block'] {
   width: 100%;
   height: 70px;
   background-color: #fff;
+  position: relative;
+  & p {
+    font-size: 12px;
+    color: #ccc;
+    font-family: "微软雅黑", sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    line-height: 20px;
+    & span {
+      color: #333;
+    }
+  }
+  &::after {
+    content: "";
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+.count-block1 {
+  border-left: solid 3px #43b29e;
+  &::after {
+    background-color: #43b29e;
+  }
+}
+.count-block2 {
+  border-left: solid 3px #388ac1;
+  &::after {
+    background-color: #388ac1;
+  }
+}
+.count-block3 {
+  border-left: solid 3px #d04a36;
+  &::after {
+    background-color: #d04a36;
+  }
+}
+.count-block4 {
+  border-left: solid 3px #e1cc46;
+  &::after {
+    background-color: #e1cc46;
+  }
 }
 
 /* panel row */
