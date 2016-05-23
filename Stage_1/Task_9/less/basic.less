@@ -556,6 +556,20 @@ nav {
   overflow: hidden;
   zoom: 1;
 }
+.panel-title {
+  width: 100%;
+  height: 40px;
+  background-color: #f3f5f6;
+  color: #aaa;
+  font-size: 12px;
+  font-family: "黑体", "Adobe Heiti Std", sans-serif;
+  padding-left: 2em;
+  line-height: 40px;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  border-bottom: solid 1px #ddd;
+}
 .row1 {
   height: 360px;
 }
@@ -566,6 +580,12 @@ nav {
   background-color: #fff;
   margin-right: 10px;
   border-radius: 10px;
+  border: solid 1px #ddd;
+  & {
+    .panel-content {
+      padding: 10px 20px;
+    }
+  }
 }
 .protocol-panel {
   width: 350px;
@@ -573,6 +593,7 @@ nav {
   float: left;
   background-color: #fff;
   border-radius: 10px;
+  border: solid 1px #ddd;
 }
 
 /* panel row 2 */
@@ -586,6 +607,7 @@ nav {
   background-color: #fff;
   margin-right: 10px;
   border-radius: 10px;
+  border: solid 1px #ddd;
 }
 .rank-panel {
   width: 530px;
@@ -593,4 +615,5 @@ nav {
   float: left;
   background-color: #fff;
   border-radius: 10px;
+  border: solid 1px #ddd;
 }
