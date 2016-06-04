@@ -1,0 +1,65 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+fieldset {
+    width: 700px;
+    margin: 30px auto;
+    border: solid 3px #99ccaa;
+    border-radius: 20px;
+}
+@keyframes fade {
+    0% {
+        border-width: 0;
+    }
+}
+.aqi-chart-wrap {
+    height: 500px;
+    width: 650px;
+    border: solid 3px #99ccaa;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    animation: fade 0.2s ease-in-out;
+}
+@keyframes grow {
+    0% {
+        height: 0;
+        margin-top: 500px;
+    }
+}
+.chart-item {
+    float: left;
+    margin: 1px;
+    animation: grow 0.5s ease-in-out;
+}
+.chart-item-day {
+    width: 5px;
+}
+.chart-item-week {
+    width: 40px;
+    margin: 3px;
+}
+.chart-item-month {
+    width: 200px;
+    margin: 8px;
+}
+.chart-item-color-0 {
+    background-color: #55ff55;
+}
+.chart-item-color-1 {
+    background-color: #88ee55;
+}
+.chart-item-color-2 {
+    background-color: #ccdd55;
+}
+.chart-item-color-3 {
+    background-color: #dd8855;
+}
+.chart-item-color-4 {
+    background-color: #dd5555;
+}
+.chart-item-color-5 {
+    background-color: #ff2222;
+}
