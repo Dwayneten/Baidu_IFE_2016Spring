@@ -1,0 +1,53 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+fieldset {
+    width: 400px;
+    margin: 20px auto;
+    border: solid 3px aquamarine;
+    border-radius: 5px;
+}
+#block-wrapper {
+    width: 420px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: solid 3px aquamarine;
+    border-radius: 5px;
+    text-align: center;
+}
+@keyframes appear {
+    0% {
+        width: 0;
+        margin: 5px 0;
+    }
+}
+#block-wrapper span {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    color: white;
+    margin: 5px;
+    float: left;
+    font-size: 24px;
+    line-height: 50px;
+    animation: appear 0.5s ease-in-out;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+#block-wrapper span:hover {
+    background-color: lightseagreen;
+}
+@keyframes hide {
+    0% {
+        opacity: 1;
+        width: 50px;
+        margin: 5px;
+    }
+}
+#block-wrapper span.removing {
+    width: 0;
+    opacity: 0;
+    margin: 5px 0;
+    animation: hide 0.5s ease-in-out;
+}
