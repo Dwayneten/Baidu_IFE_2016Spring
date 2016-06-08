@@ -1,0 +1,37 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+fieldset {
+    width: 520px;
+    margin: 20px auto;
+    border: solid 3px aquamarine;
+    border-radius: 5px;
+}
+#block-wrapper {
+    width: 905px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: solid 3px aquamarine;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+@keyframes grow {
+    0% {
+        height: 0;
+    }
+}
+#block-wrapper span {
+    position: absolute;
+    bottom: 0;
+    background-color: aquamarine;
+    width: 10px;
+    animation: grow 0.5s ease-in-out;
+    transition: height 0.2s;
+}
+
+#block-wrapper span.blue-span {
+    background-color: #33acfe;
+    transition: 0.2s;
+}
