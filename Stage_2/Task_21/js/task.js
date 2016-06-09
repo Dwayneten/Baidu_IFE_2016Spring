@@ -40,7 +40,7 @@ function NodeList(inputElementParameter, nodeWrapperParameter) {
     this.addData = function (value) {
         if (!this.checkValue(value))
             return;
-        if (this.dataArr.length >= 10) {
+        if (this.nodeWrapper.childNodes.length >= 10) {
             this.nodeWrapper.removeChild(this.nodeWrapper.firstElementChild);
             this.dataArr.shift();
         }
