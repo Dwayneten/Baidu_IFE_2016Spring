@@ -1,0 +1,70 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+    box-sizing: border-box;
+}
+#container {
+    width: 370px;
+    margin: 50px auto;
+    border: solid 2px #33acfe;
+    padding: 20px;
+}
+legend {
+    font-size: 20px;
+}
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+span {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.error span {
+    color: #e74f4d;
+}
+.accept span {
+    color: #55ff55;
+}
+input {
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #ccc;
+    padding-left: 10px;
+    margin: 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 40px;
+}
+.error input {
+    border-color: #e74f4d;
+    box-shadow: inset 0 1px 1px rgba(231, 79, 77, 0.4);
+    border-width: 2px;
+}
+.accept input {
+    border-color: #55ff55;
+    box-shadow: inset 0 1px 1px rgba(85, 255, 85, 0.4);
+    border-width: 2px;
+}
+button {
+    background-color: #33acfe;
+    color: #fff;
+    outline: none;
+    border: solid 2px #fff;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #44eecc;
+    color: #fff;
+}
