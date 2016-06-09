@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_20</title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+    <fieldset>
+        <legend>模拟队列</legend>
+        <textarea name="word" id="input-word" cols="70" rows="5" placeholder="允许一次批量输入多个内容，格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔" ></textarea>
+        <button id="btn-left-in">左侧入</button>
+        <button id="btn-right-in">右侧入</button>
+        <button id="btn-left-out">左侧出</button>
+        <button id="btn-right-out">右侧出</button>
+        <input id="input-key" type="text" placeholder="检索内容">
+        <button id="btn-search">检索</button>
+    </fieldset>
+    <div id="block-wrapper"></div>
+    <script src="js/task.js"></script>
+</body>
+</html>
