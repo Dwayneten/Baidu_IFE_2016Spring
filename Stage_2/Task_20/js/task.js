@@ -63,7 +63,7 @@ function highLightSearch() {
         return ;
     }
     var nodes = blockWrapper.childNodes;
-    for (let i=0; i<nodes.length; ++i) {
+    for (var i=0; i<nodes.length; ++i) {
         if (nodes[i].textContent.includes(str)) {
             nodes[i].style.backgroundColor = "#33acfe";
         } else {
