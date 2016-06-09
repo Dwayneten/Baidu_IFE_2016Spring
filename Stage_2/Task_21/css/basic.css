@@ -1,31 +1,26 @@
 * {
     font-family: "Microsoft JhengHei", sans-serif;
+    box-sizing: border-box;
+}
+input {
+    width: 200px;
 }
 fieldset {
-    width: 480px;
+    width: 450px;
     margin: 20px auto;
-    border: solid 3px #7fffd4;
+    border: solid 3px #33acfe;
     border-radius: 5px;
 }
 textarea {
-    float: left;
     resize: none;
 }
 button {
-    float: left;
-    margin: 5px;
+    display: block;
+    margin: 0 auto;
 }
-input {
-    float: left;
-    margin: 5px;
-}
-#block-wrapper {
-    width: 905px;
-    min-height: 200px;
+#tag-node-wrapper {
+    width: 100%;
     overflow: hidden;
-    margin: 20px auto;
-    border: solid 3px #7fffd4;
-    border-radius: 5px;
     text-align: center;
     position: relative;
 }
@@ -43,7 +38,7 @@ input {
         transform: translateY(-10px);
     }
 }
-#block-wrapper span {
+span {
     height: 50px;
     font-size: 24px;
     line-height: 50px;
@@ -55,6 +50,7 @@ input {
     animation: drop 0.3s ease-in-out;
     transition: height, background-color 0.2s;
     cursor: pointer;
+    text-align: center;
 }
 @keyframes disappear {
     0% {
@@ -62,7 +58,7 @@ input {
         margin: 5px;
     }
 }
-#block-wrapper span.removing {
+span.removing {
     min-width: 0;
     width: 0;
     margin: 5px 0;
