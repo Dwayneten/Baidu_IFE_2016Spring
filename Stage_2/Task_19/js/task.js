@@ -10,15 +10,15 @@ var $ = function (id) {
 
 /* 排序 */
 Array.prototype.mySort = function () {
-    for (let i=0; i<this.length; ++i) {
-        let minIn = i;
-        for (let j=i+1; j<this.length; ++j) {
+    for (var i=0; i<this.length; ++i) {
+        var minIn = i;
+        for (var j=i+1; j<this.length; ++j) {
             if (this[j] < this[minIn]) {
                 minIn = j;
             }
         }
         if (minIn != i) {
-            let t = this[minIn];
+            var t = this[minIn];
             this[minIn] = this[i];
             this[i] = t;
         }
@@ -63,7 +63,7 @@ function mySortHandler() {
 /* 随机生成 num 个数到 queueData 中 */
 function generateQueueData(num) {
     queueData = [];
-    for (let i = 0; i < num; ++i) {
+    for (var i = 0; i < num; ++i) {
         queueData.push(Math.round(Math.max(Math.random(), 0.1) * 190));
     }
 }
