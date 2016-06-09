@@ -94,6 +94,8 @@ function NodeList(inputElementParameter, nodeWrapperParameter) {
          */
         span.addEventListener("click", function (event) {
             event.target.classList.add("removing");
+            var index = self.dataArr.indexOf(event.target.textContent.slice(3));
+            self.dataArr = self.dataArr.slice(0, index).concat(self.dataArr.slice(index + 1));
             event.target.textContent = "";
             setTimeout(function () {
                 self.nodeWrapper.removeChild(event.target);
