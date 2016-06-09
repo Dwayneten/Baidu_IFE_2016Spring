@@ -1,0 +1,70 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+fieldset {
+    width: 480px;
+    margin: 20px auto;
+    border: solid 3px #7fffd4;
+    border-radius: 5px;
+}
+textarea {
+    float: left;
+    resize: none;
+}
+button {
+    float: left;
+    margin: 5px;
+}
+input {
+    float: left;
+    margin: 5px;
+}
+#block-wrapper {
+    width: 905px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: solid 3px #7fffd4;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(-55px);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+}
+#block-wrapper span {
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    color: white;
+    background-color: #7fffd4;
+    min-width: 50px;
+    float: left;
+    margin: 5px;
+    animation: drop 0.3s ease-in-out;
+    transition: height, background-color 0.2s;
+    cursor: pointer;
+}
+@keyframes disappear {
+    0% {
+        min-width: 50px;
+        margin: 5px;
+    }
+}
+#block-wrapper span.removing {
+    min-width: 0;
+    width: 0;
+    margin: 5px 0;
+    animation: disappear 0.5s ease-in-out;
+}
