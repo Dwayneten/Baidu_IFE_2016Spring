@@ -10,8 +10,8 @@ header {
     color: #fff;
     font-size: 72px;
     font-family: "Microsoft JhengHei", sans-serif;
-    line-height: 300px;
     text-align: center;
+    padding-top: 50px;
     border-bottom: solid 10px #246;
 }
 body {
