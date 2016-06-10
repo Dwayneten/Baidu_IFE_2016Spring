@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_32</title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+<div class="code">
+    var configForm1 = { <br>
+    label: '名称', // 表单标签 <br>
+    type: 'input', // 表单类型 <br>
+    validator: checkLen, // 表单验证规则 <br>
+    rules: '必填，长度为 4-16 个字符', // 填写规则提示 <br>
+    success: '格式正确', // 验证通过提示 <br>
+    fail: '名称长度不正确' // 验证失败提示 <br>
+    }; <br>
+</div>
+<div class="code">
+    var configForm2 = { <br>
+    label: '手机', // 表单标签 <br>
+    type: 'input', // 表单类型 <br>
+    validator: checkPhoneLen, // 表单验证规则 <br>
+    rules: '请输入有效的手机号码', // 填写规则提示 <br>
+    success: '格式正确', // 验证通过提示 <br>
+    fail: '手机号码长度不正确' // 验证失败提示 <br>
+    }; <br>
+</div>
+<fieldset id="content">
+    <legend>表单</legend>
+</fieldset>
+<script src="js/task.js"></script>
+</body>
+</html>

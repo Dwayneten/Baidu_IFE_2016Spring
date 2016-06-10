@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+#content {
+    width: 400px;
+}
+.green-container {
+    color: #43b29e;
+}
+.blue-container {
+    color: #33acfe;
+}
+.green-container input {
+    border: solid 1px #43b29e;
+}
+.blue-container input {
+    border: solid 1px #33acfe;
+}
+input {
+    margin: 5px;
+}
+.code {
+    width: 400px;
+    background-color: #ccc;
+    margin: 5px;
+    padding: 5px;
+}
