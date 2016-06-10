@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_29</title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+<fieldset id="container">
+    <legend>表单</legend>
+    <table id="table-form">
+        <tr>
+            <td><label for="name">名称</label></td>
+            <td>
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="hint-name">必填，长度为 4~16 个字符</span></td>
+        </tr>
+        <tr>
+            <td><label for="password">密码</label></td>
+            <td>
+                <input type="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="hint-password">必填，长度为 4~16 个字符</span></td>
+        </tr>
+        <tr>
+            <td><label for="password-confirm">密码确认</label></td>
+            <td>
+                <input type="password" id="password-confirm">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="hint-password-confirm">必填，再次输入相同密码</span></td>
+        </tr>
+        <tr>
+            <td><label for="mail">邮箱</label></td>
+            <td>
+                <input type="text" id="mail">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="hint-mail">必填，输入格式正确的邮箱</span></td>
+        </tr>
+        <tr>
+            <td><label for="phone">手机</label></td>
+            <td>
+                <input type="text" id="phone">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span id="hint-phone">必填，输入格式正确的手机号码</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" id="btn-submit">提交</button></td>
+        </tr>
+    </table>
+</fieldset>
+<script src="js/task.js"></script>
+</body>
+</html>

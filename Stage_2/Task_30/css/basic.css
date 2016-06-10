@@ -1,0 +1,83 @@
+* {
+    font-family: "Microsoft JhengHei", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 550px;
+    margin: 50px auto;
+    border: solid 2px #ccc;
+    padding: 20px;
+    box-shadow: 0 0 5px #ccc;
+}
+td {
+    padding: 2px 0;
+}
+legend {
+    font-size: 20px;
+}
+label {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+span[id^=hint] {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0 10px;
+    font-weight: bold;
+    display: none;
+}
+.error span {
+    color: #e74f4d;
+}
+.accept span {
+    color: #44ff88;
+}
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #ccc;
+    padding-left: 10px;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 40px;
+}
+.error input {
+    border-color: #e74f4d;
+    box-shadow: inset 0 0 2px rgb(231, 79, 77);
+}
+.accept input {
+    border-color: #44ff88;
+    box-shadow: inset 0 0 2px #44ff88;
+}
+button {
+    background-color: #33acfe;
+    color: #fff;
+    outline: none;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    float: right;
+    border: none;
+    border-bottom: solid 3px #119adc;
+}
+button:hover {
+    background-color: #44eecc;
+    border-bottom: solid 3px #22ccaa;
+    color: #fff;
+}
+button:active {
+    border: none;
+}
