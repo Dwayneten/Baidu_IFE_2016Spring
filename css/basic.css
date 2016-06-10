@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 300px;
+    background-color: #223;
+    color: #fff;
+    font-size: 72px;
+    font-family: "Microsoft JhengHei", sans-serif;
+    line-height: 300px;
+    text-align: center;
+    border-bottom: solid 10px #246;
+}
+body {
+    background-color: #ccc;
+}
+article {
+    margin: 0 auto;
+    padding: 50px;
+}
+section {
+    width: 80vw;
+    min-height: 200px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px #bbb;
+}
