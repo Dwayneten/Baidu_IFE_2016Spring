@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Task_31</title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+<fieldset id="container">
+    <legend>表单</legend>
+    <table id="table-form">
+        <tr>
+            <td></td>
+            <td colspan="2"><input type="radio" id="student" checked name="isStudent"><label for="student">在校生</label><input type="radio" id="not-student" name="isStudent"><label for="not-student">非在校生</label></td>
+        </tr>
+        <tr>
+            <td id="td-label"><label for="select-area" id="label-school">学校</label><label for="input-company" id="label-company">就业单位</label></td>
+            <td id="td-company">
+                <input type="text" id="input-company">
+            </td>
+            <td>
+                <select name="area" id="select-area">
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="gz">广州</option>
+                </select>
+            </td>
+            <td>
+                <select name="area" id="select-school">
+                    <option value="北京大学">北京大学</option>
+                    <option value="清华大学">清华大学</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<script src="js/task.js"></script>
+</body>
+</html>
