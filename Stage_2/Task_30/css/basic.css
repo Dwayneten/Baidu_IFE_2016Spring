@@ -50,6 +50,10 @@ input {
     font-size: 16px;
     line-height: 40px;
 }
+input:hover, input:active {
+    border-color: #66afe9;
+    box-shadow: 0 0 1px 1px #66afe9;
+}
 .error input {
     border-color: #a94442;
     box-shadow: 0 0 1px 1px #a94442;
@@ -73,7 +77,6 @@ button {
     border: none;
     border-bottom: solid 3px #119adc;
 }
-
 button:active {
     border: none;
 }
