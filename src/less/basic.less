@@ -14,10 +14,10 @@
   }
   .generate-columns(@mdFlag, @n, (@i + 1));
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .generate-columns(true, 12);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .generate-columns(false, 12);
 }
 [class^='col'] {
@@ -50,6 +50,7 @@ body {
 article {
   margin: 0 auto;
   clear: both;
+  min-width: 700px;
 }
 .inner {
   background-color: #fff;
@@ -87,11 +88,14 @@ li {
     width: 100%;
     padding-left: 20px;
     color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &:hover {
       background-color: #c33;
       color: #fff;
       transform: translateX(-30px);
-      transition: transform 0.3s, background-color 0.3s;
+      transition: transform 0.3s;
       box-shadow: 0 0 10px #aaa;
     }
   }

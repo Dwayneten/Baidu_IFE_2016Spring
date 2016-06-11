@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* grid system */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .col-md-1 {
     width: 8.33333333%;
   }
@@ -42,7 +42,7 @@
     width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .col-sm-1 {
     width: 8.33333333%;
   }
@@ -110,6 +110,7 @@ body {
 article {
   margin: 0 auto;
   clear: both;
+  min-width: 700px;
 }
 .inner {
   background-color: #fff;
@@ -148,11 +149,14 @@ li a {
   width: 100%;
   padding-left: 20px;
   color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 li a:hover {
   background-color: #c33;
   color: #fff;
   transform: translateX(-30px);
-  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s;
   box-shadow: 0 0 10px #aaa;
 }
