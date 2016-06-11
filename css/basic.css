@@ -1,30 +1,158 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* grid system */
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+[class^='col'] {
+  min-height: 1px;
+  padding: 10px;
+  float: left;
+}
+.container {
+  padding: 10px;
 }
 header {
-    width: 100%;
-    height: 300px;
-    background-color: #223;
-    color: #fff;
-    font-size: 72px;
-    font-family: "Microsoft JhengHei", sans-serif;
-    text-align: center;
-    padding-top: 50px;
-    border-bottom: solid 10px #246;
+  width: 100%;
+  height: 250px;
+  background: #324;
+  color: #fff;
+  font-size: 72px;
+  font-family: "Segoe UI", sans-serif;
+  padding: 50px 100px;
+}
+header h1 {
+  font-size: 48px;
+  font-weight: lighter;
+}
+header h2 {
+  font-size: 48px;
 }
 body {
-    background-color: #ccc;
+  background-color: #eee;
 }
 article {
-    margin: 0 auto;
-    padding: 50px;
+  margin: 0 auto;
+  clear: both;
 }
-section {
-    width: 80vw;
-    min-height: 200px;
-    margin: 50px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px #bbb;
+.inner {
+  background-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  padding: 20px;
+}
+section h1 {
+  border-left: solid 5px #c33;
+  padding-left: 10px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-size: 24px;
+}
+ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+li {
+  height: 40px;
+  line-height: 40px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+li + li {
+  border-top: none;
+}
+li:hover {
+  height: 50px;
+  line-height: 50px;
+}
+li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  color: #000;
+}
+li a:hover {
+  background-color: #c33;
+  color: #fff;
+  transform: translateX(-30px);
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 0 10px #aaa;
 }
