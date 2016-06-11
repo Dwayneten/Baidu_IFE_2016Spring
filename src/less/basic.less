@@ -57,16 +57,45 @@ article {
   box-shadow: 0 1px 1px #ccc;
   padding: 20px;
 }
-section h1 {
-  border-left: solid 5px #c33;
-  padding-left: 10px;
-  font-family: "Microsoft JhengHei", sans-serif;
-  font-size: 24px;
+section {
+  & h1 {
+    border-left: solid 5px #c33;
+    padding-left: 10px;
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-size: 28px;
+  }
+  & h2 {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 36px;
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-size: 18px;
+    & a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #e55;
+      border-bottom: solid 2px #c33;
+      border-radius: 5px;
+      padding: 0 5px;
+      margin-left: 10px;
+      font-weight: normal;
+      &:active {
+        border-bottom: solid 2px #e55;
+      }
+    }
+  }
 }
 ul {
   list-style: none;
   margin-top: 20px;
   margin-left: 30px;
+  animation: appear 1s ease-in-out;
+}
+@keyframes appear {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
 }
 li {
   height: 40px;
@@ -96,7 +125,7 @@ li {
       color: #fff;
       transform: translateX(-30px);
       transition: transform 0.3s;
-      box-shadow: 0 0 10px #aaa;
+      box-shadow: 0 0 10px #ccc;
     }
   }
 }
