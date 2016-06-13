@@ -9,6 +9,10 @@
 
 [Baidu IFE 2016 Spring](http://dwayneten.com/Baidu_IFE_2016Spring)
 
+### Stage 1
+
+Task 3~9
+
 ## 任务相关笔记
 
 - [第一阶段](http://dwayneten.com/2016/04/22/ife-stage1)
