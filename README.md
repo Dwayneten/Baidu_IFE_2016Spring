@@ -13,6 +13,12 @@
 
 Task 3~9
 
+### Stage 2
+
+Task 13~21
+
+Task 29~32
+
 ## 任务相关笔记
 
 - [第一阶段](http://dwayneten.com/2016/04/22/ife-stage1)
