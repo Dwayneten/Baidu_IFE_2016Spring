@@ -80,7 +80,7 @@
     width: 100%;
   }
 }
-[class^='col'] {
+[class^='col-'] {
   min-height: 1px;
   padding: 10px;
   float: left;

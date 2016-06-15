@@ -20,7 +20,7 @@
 @media (max-width: 991px) {
   .generate-columns(false, 12);
 }
-[class^='col'] {
+[class^='col-'] {
   min-height: 1px;
   padding: @half-gutter;
   float: left;
@@ -36,11 +36,11 @@ header {
   font-size: 72px;
   font-family: "Segoe UI", sans-serif;
   padding: 50px 100px;
-  & h1 {
+  h1 {
     font-size: 48px;
     font-weight: lighter;
   }
-  & h2 {
+  h2 {
     font-size: 48px;
   }
 }
@@ -58,19 +58,19 @@ article {
   padding: 20px;
 }
 section {
-  & h1 {
+  h1 {
     border-left: solid 5px #c33;
     padding-left: 10px;
     font-family: "Microsoft JhengHei", sans-serif;
     font-size: 28px;
   }
-  & h2 {
+  h2 {
     margin-top: 10px;
     padding-left: 20px;
     line-height: 36px;
     font-family: "Microsoft JhengHei", sans-serif;
     font-size: 18px;
-    & a {
+    a {
       text-decoration: none;
       color: #fff;
       background-color: #e55;
@@ -109,7 +109,7 @@ li {
     height: 50px;
     line-height: 50px;
   }
-  & a {
+  a {
     text-decoration: none;
     font-size: 18px;
     font-family: "Microsoft JhengHei", sans-serif;
