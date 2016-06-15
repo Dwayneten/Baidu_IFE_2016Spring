@@ -707,6 +707,11 @@ nav a:last-child {
   font-size: 12px;
   color: #aaa;
 }
+.panel-content input {
+  margin: 10px 5px;
+  display: inline-block;
+  float: left;
+}
 #protocol-row-1 {
   width: 100%;
   margin: 0 auto;
@@ -726,6 +731,32 @@ nav a:last-child {
 }
 #protocol-row-22 {
   width: 60%;
+}
+#protocol-row-3 {
+  height: 180px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+#protocol-row-4 {
+  font-size: 12px;
+  color: #aaa;
+}
+#protocol-row-4 p {
+  margin-top: 10px;
+  line-height: 12px;
+  float: left;
+  color: #aaa;
+}
+#protocol-row-4 a,
+#protocol-row-4 a:hover {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+  background-color: #388ac1;
+  float: right;
+  margin-top: 5px;
 }
 /* panel row 2 */
 .row2 {
