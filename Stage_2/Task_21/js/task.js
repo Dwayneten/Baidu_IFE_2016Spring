@@ -17,101 +17,100 @@ function NodeList(inputElementParameter, nodeWrapperParameter) {
     this.dataArr = [];
     this.inputElement = inputElementParameter;
     this.nodeWrapper = nodeWrapperParameter;
-
-    /**
-     * 添加节点的接口
-     */
-    this.addNode = function () {
-        var value = this.getValue().trim().replace(/[,，]/, "");
-        this.addData(value);
-        this.reset();
-    };
-    /**
-     * 获取输入框内容
-     * @returns {string|string|Number}
-     */
-    this.getValue = function () {
-        return this.inputElement.value;
-    };
-    /**
-     * 增加节点
-     * @param value 节点文本内容
-     */
-    this.addData = function (value) {
-        if (!this.checkValue(value))
-            return;
-        if (this.nodeWrapper.childNodes.length >= 10) {
-            this.nodeWrapper.removeChild(this.nodeWrapper.firstElementChild);
-            this.dataArr.shift();
-        }
-        this.generateSpan(value);
-        this.dataArr.push(value);
-    };
-    /**
-     * 检查文本数据的合法性
-     * @param str 文本数据
-     * @returns {boolean} 代表是否合法的布朗值
-     */
-    this.checkValue = function (str) {
-        if (str === "") {
-            return false;
-        } else if (/[^\w\d\u4E00-\u9FA5]/.test(str)) {
-            return false;
-        } else {
-            var isUnique = true;
-            this.dataArr.forEach(function (v) {
-                if (v == str) {
-                    isUnique = false;
-                }
-            });
-            return isUnique;
-        }
-    };
-    /**
-     * 生成节点元素
-     * @param value 节点的文本内容
-     */
-    this.generateSpan = function (value) {
-        var self = this;
-        var span = document.createElement('span');
-        span.textContent = value;
-        /**
-         * 鼠标移入元素的事件
-         */
-        span.addEventListener("mouseenter", function () {
-            this.textContent = "删除 " + this.textContent;
-            this.style.backgroundColor = "#33acfe";
-        });
-        /**
-         * 鼠标移出元素的事件
-         */
-        span.addEventListener("mouseleave", function () {
-            this.textContent = this.textContent.substr(3);
-            this.style.backgroundColor = "#7fffd4";
-        });
-        /**
-         * 鼠标点击元素的事件
-         */
-        span.addEventListener("click", function (event) {
-            event.target.classList.add("removing");
-            var index = self.dataArr.indexOf(event.target.textContent.slice(3));
-            self.dataArr = self.dataArr.slice(0, index).concat(self.dataArr.slice(index + 1));
-            event.target.textContent = "";
-            setTimeout(function () {
-                self.nodeWrapper.removeChild(event.target);
-            }, 500);
-        });
-        /* 将元素添加至容器后面 */
-        this.nodeWrapper.appendChild(span);
-    };
-    /**
-     * 重置输入元素的内容并使其获取焦点
-     */
-    this.reset = function () {
-        this.inputElement.value = "";
-        this.inputElement.focus();
-    };
 }
+/**
+ * 添加节点的接口
+ */
+NodeList.prototype.addNode = function () {
+    var value = this.getValue().trim().replace(/[,，]/, "");
+    this.addData(value);
+    this.reset();
+};
+/**
+ * 获取输入框内容
+ * @returns {string|string|Number}
+ */
+NodeList.prototype.getValue = function () {
+    return this.inputElement.value;
+};
+/**
+ * 增加节点
+ * @param value 节点文本内容
+ */
+NodeList.prototype.addData = function (value) {
+    if (!this.checkValue(value))
+        return;
+    if (this.nodeWrapper.childNodes.length >= 10) {
+        this.nodeWrapper.removeChild(this.nodeWrapper.firstElementChild);
+        this.dataArr.shift();
+    }
+    this.generateSpan(value);
+    this.dataArr.push(value);
+};
+/**
+ * 检查文本数据的合法性
+ * @param str 文本数据
+ * @returns {boolean} 代表是否合法的布朗值
+ */
+NodeList.prototype.checkValue = function (str) {
+    if (str === "") {
+        return false;
+    } else if (/[^\w\d\u4E00-\u9FA5]/.test(str)) {
+        return false;
+    } else {
+        var isUnique = true;
+        this.dataArr.forEach(function (v) {
+            if (v == str) {
+                isUnique = false;
+            }
+        });
+        return isUnique;
+    }
+};
+/**
+ * 生成节点元素
+ * @param value 节点的文本内容
+ */
+NodeList.prototype.generateSpan = function (value) {
+    var self = this;
+    var span = document.createElement('span');
+    span.textContent = value;
+    /**
+     * 鼠标移入元素的事件
+     */
+    span.addEventListener("mouseenter", function () {
+        this.textContent = "删除 " + this.textContent;
+        this.style.backgroundColor = "#33acfe";
+    });
+    /**
+     * 鼠标移出元素的事件
+     */
+    span.addEventListener("mouseleave", function () {
+        this.textContent = this.textContent.substr(3);
+        this.style.backgroundColor = "#7fffd4";
+    });
+    /**
+     * 鼠标点击元素的事件
+     */
+    span.addEventListener("click", function (event) {
+        event.target.classList.add("removing");
+        var index = self.dataArr.indexOf(event.target.textContent.slice(3));
+        self.dataArr = self.dataArr.slice(0, index).concat(self.dataArr.slice(index + 1));
+        event.target.textContent = "";
+        setTimeout(function () {
+            self.nodeWrapper.removeChild(event.target);
+        }, 500);
+    });
+    /* 将元素添加至容器后面 */
+    this.nodeWrapper.appendChild(span);
+};
+/**
+ * 重置输入元素的内容并使其获取焦点
+ */
+NodeList.prototype.reset = function () {
+    this.inputElement.value = "";
+    this.inputElement.focus();
+};
 
 /**
  * TagNodeList 对象和 FavorNodeList 对象的实例
@@ -128,10 +127,11 @@ function TagNodeList() {
     this.nodeWrapper = $('tag-node-wrapper');
     this.inputElement = $('input-tag');
     /* 继承 NodeList 并调用父类构造函数 */
-    this.prototype = Object.create(NodeList.prototype);
-    this.prototype.constructor = TagNodeList;
     NodeList.call(this, this.inputElement, this.nodeWrapper);
 }
+/* 继承 NodeList  */
+TagNodeList.prototype = Object.create(NodeList.prototype);
+TagNodeList.prototype.constructor = TagNodeList;
 
 /**
  * FavorNodeList 对象
@@ -143,16 +143,17 @@ function FavorNodeList() {
     this.nodeWrapper = $('favor-node-wrapper');
     this.inputElement = $('input-favor');
     this.btnFavor = $('btn-favor');
-    /* 继承 NodeList 并调用父类构造函数 */
-    this.prototype = Object.create(NodeList.prototype);
-    this.prototype.constructor = FavorNodeList;
+    /* 调用父类构造函数 */
     NodeList.call(this, this.inputElement, this.nodeWrapper);
-    /* 重写 addNode 函数 */
-    this.addNode = function (value) {
-        this.addData(value);
-        this.reset();
-    }
 }
+/* 继承 NodeList  */
+FavorNodeList.prototype = Object.create(NodeList.prototype);
+FavorNodeList.prototype.constructor = FavorNodeList;
+/* 重写 addNode 函数 */
+FavorNodeList.prototype.addNode = function (value) {
+    this.addData(value);
+    this.reset();
+};
 
 /**
  * 进行相关的事件绑定
