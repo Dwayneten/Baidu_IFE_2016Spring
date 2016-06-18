@@ -8,8 +8,6 @@
 
 > 从任务的难易程度排序，简单到困难，依次是：任务 13-17，18-21，22-25 | 29-32，26-28，33-36
 
-<!-- more -->
-
 ## 零基础JavaScript编码
 
 > ### [任务十三：零基础JavaScript编码（一）](http://ife.baidu.com/task/detail?taskId=13)
@@ -20,7 +18,7 @@
 
 本任务完成的功能为：用户可以在输入框中输入任何内容，点击“确认填写”按钮后，用户输入的内容会显示在“您输入的值是”文字的右边
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_13\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_2/Task_13)
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_13\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_13)
 
 
 
@@ -30,7 +28,7 @@
 
 参考示例代码，页面加载后，将提供的空气质量数据数组，按照某种逻辑（比如空气质量大于60）进行过滤筛选，最后将符合条件的数据按照一定的格式要求显示在网页上
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_14\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_2/Task_14)
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_14\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_14)
 
 
 > ### [任务十五：零基础JavaScript编码（三）](http://ife.baidu.com/task/detail?taskId=15)
@@ -41,7 +39,7 @@
 
 将数据按照某种顺序排序后，在resort列表中按照顺序显示出来
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_15\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_2/Task_15)
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_15\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_15)
 
 
 > ### [任务十六：零基础JavaScript编码（四）](http://ife.baidu.com/task/detail?taskId=16)
@@ -58,7 +56,7 @@
 
 用户可以点击表格列中的“删除”按钮，删掉那一行的数据
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_16\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_2/Task_16)
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_16\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_16)
 
 
 
@@ -88,7 +86,7 @@
 
 鼠标移动到柱状图的某个柱子时，用title属性提示这个柱子的具体日期和数据
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_17\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_2/Task_17)
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_17\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_17)
 
 > ### 任务总结
 
@@ -141,6 +139,7 @@ let cityKeyData = Object.keys(aqiSourceData[city]);
 ></span>
 ```
 
+- - - - - -
 
 ## 基础JavaScript练习
 
@@ -323,3 +322,113 @@ function createObject(proto) {
 // Usage:
 Student.prototype = createObject(Person.prototype);
 ```
+
+- - - - - -
+
+## 表单
+
+> ### [任务二十九：表单（一）单个表单项的检验](http://ife.baidu.com/task/detail?taskId=29)
+
+#### 任务描述
+
+如[示例图](http://7xrp04.com1.z0.glb.clouddn.com/task_2_29_1.jpg)中所示，在页面中实现一个输入框与按钮，要求点击验证按钮后，对输入框中内容进行格式校验，并在其下方显示校验结果
+
+校验规则：
+1.字符数为 4~16 位
+2.每个英文字母、数字、英文符号长度为 1
+3.每个汉字，中文符号长度为 2
+
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_29) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_29)
+
+
+> ### [任务三十：表单（二）多个表单项的动态校验](http://ife.baidu.com/task/detail?taskId=30)
+
+#### 任务描述
+
+如[示例图](http://7xrp04.com1.z0.glb.clouddn.com/task_2_30_1.jpg)中所示，基于上一个任务（任务 29），在页面中添加多个表单
+
+要求:
+1.表单获得焦点时，下方显示表单填写规则
+2.表单失去焦点时校验表单内容
+3.校验结果正确时，表单边框显示绿色，并在下方显示验证通过的描述文字
+4.校验结果错误时，表单边框显示红色，并在下方显示验证错误的描述文字
+5.点击提交按钮时，对页面中所有输入进行校验，校验结果显示方式同上。若所有表单校验通过，弹窗显示“提交成功”，否则显示“提交失败”
+
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_30) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_30)
+
+
+> ### [任务三十一：表单（三）联动](http://ife.baidu.com/task/detail?taskId=31)
+
+#### 任务描述
+
+如[示例图](http://7xrp04.com1.z0.glb.clouddn.com/task_2_31_1.jpg)中所示，在页面中完成两个单选框，切换单选框的不同选项时下方显示的表单随之切换。
+
+1.当选择在校生时，出现两个 select 下拉菜单，一个选择城市，一个选择学校，当选择非在校生时，出一个文本输入框
+2.学校下拉菜单里的学校名单均为城市下拉菜单中所选的城市中的大学，当城市发生变化时，学校一起发生变化
+3.城市及学校的数据随意编造即可，无需真实完整
+
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_31) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_31)
+
+
+> ### [任务三十二：表单（四）实现表单自动生成工厂](http://ife.baidu.com/task/detail?taskId=32)
+
+#### 任务描述
+
+实现以 JavaScript 对象的方式定义表单及验证规则
+表单配置参考示例如下：（不需要一致，仅为参考）
+``` JavaScript
+  {
+      label: '名称',                    // 表单标签
+      type: 'input',                   // 表单类型
+      validator: function () {...},    // 表单验证规
+      rules: '必填，长度为4-16个字符',    // 填写规则提示
+      success: '格式正确',              // 验证通过提示
+      fail: '名称不能为空'               // 验证失败提示
+  }
+```
+基于该配置项，实现一套逻辑，可以自动生成表单的展现、交互、验证
+使用你制作的表单工厂，在一个页面上创建两套样式不同的表单
+
+[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_32) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_32)
+
+> ### 任务总结
+
+#### JavaScript
+
+通过`charCodeAt()`方法来获取字符编码， 从而判断是否为中文字符
+``` JavaScript
+var code = value.charCodeAt(i);
+/* 符号 */
+if (0xFF00 <= code && code <= 0xFFEF) {
+    count += 2;
+} else if (0x4E00 <= code && code <= 0x9FA5) {
+/* 汉字 */
+    count += 2;
+} else {
+    count++;
+}
+```
+
+通过对`focus`和`blur`事件进行监听实现输入框获取或失去焦点时显示或改变提示文本
+``` JavaScript
+function bindFocusFunction(e) {
+    for (var i=0; i<inputArr.length; ++i) {
+        bindFocusFunction(inputArr[i]);
+        bindBlurFunction(inputArr[i]);
+    }
+}
+/**
+ * 绑定 input 元素获取焦点的事件
+ * @param e - input 元素
+ */
+function bindFocusFunction(e) {
+    e.addEventListener('focus', function () {
+        var hint = $('hint-' + e.id);
+        hint.style.display = "block";
+    });
+}
+```
+
+使用正则表达式对手机号码进行简单校验`/^1[34578]\d{9}$/.test(phoneStr)`
+
+获取`<select>`中被选中选项的值`selectArea.options[selectArea.selectedIndex].value`
