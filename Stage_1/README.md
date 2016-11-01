@@ -36,7 +36,7 @@
 灰色元素水平垂直居中，有两个四分之一圆位于其左上角和右下角。
 
 
-[Demo]((http://dwayneten.com\Baidu_IFE_2016Spring\Stage_1\Task_4\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_4)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_4/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_4)
 
 
 #### 任务总结
@@ -57,7 +57,7 @@
 页面宽度固定（定宽）
 
 
-[Demo]((http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_6/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_6)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_6/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_6)
 
 
 #### 任务总结
@@ -98,7 +98,7 @@
 
 设计稿是有一定宽度的，这个宽度为页面的最小宽度，也就是说，当浏览器窗口宽度小于设计稿宽度时，允许出现横向滚动条，页面内容宽度保持不变，但是当浏览器窗口宽度大于设计稿宽度时，页面部分内容的宽度应该保持和浏览器窗口宽度一致，具体哪些部分题目不做具体指明，看看大家的判断如何。
 
-[Demo]((http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_7/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_7)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_7/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_7)
 
 
 #### 任务总结
@@ -131,7 +131,7 @@
 
 需要实现如 [效果图](http://7xrp04.com1.z0.glb.clouddn.com/task_1_8_1.png) 所示，调整浏览器宽度查看响应式效果，效果图中的红色的文字是说明，不需要写在 HTML 中。
 
-[Demo]((http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_8/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_8)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_8/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_8)
 
 
 #### 任务总结
@@ -172,7 +172,7 @@ gulp.task('less', function () {
 
 整个页面内容宽度固定，但头部的蓝色导航和浏览器宽度保持一致
 
-[Demo]((http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_9/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_9)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_1/Task_9/index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/master/Stage_1/Task_9)
 
 
 #### 任务总结
