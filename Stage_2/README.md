@@ -18,7 +18,7 @@
 
 本任务完成的功能为：用户可以在输入框中输入任何内容，点击“确认填写”按钮后，用户输入的内容会显示在“您输入的值是”文字的右边
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_13\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_13)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_13) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_13)
 
 
 
@@ -28,7 +28,7 @@
 
 参考示例代码，页面加载后，将提供的空气质量数据数组，按照某种逻辑（比如空气质量大于60）进行过滤筛选，最后将符合条件的数据按照一定的格式要求显示在网页上
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_14\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_14)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_14) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_14)
 
 
 > ### [任务十五：零基础JavaScript编码（三）](http://ife.baidu.com/task/detail?taskId=15)
@@ -39,7 +39,7 @@
 
 将数据按照某种顺序排序后，在resort列表中按照顺序显示出来
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_15\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_15)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_15) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_15)
 
 
 > ### [任务十六：零基础JavaScript编码（四）](http://ife.baidu.com/task/detail?taskId=16)
@@ -56,7 +56,7 @@
 
 用户可以点击表格列中的“删除”按钮，删掉那一行的数据
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_16\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_16)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_16) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_16)
 
 
 
@@ -86,7 +86,7 @@
 
 鼠标移动到柱状图的某个柱子时，用title属性提示这个柱子的具体日期和数据
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_17\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_17)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_17) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_17)
 
 > ### 任务总结
 
@@ -157,7 +157,7 @@ let cityKeyData = Object.keys(aqiSourceData[city]);
 - 点击"右侧出"，读取并删除队列又侧第一个元素，并弹窗显示元素中数值；
 - 点击队列中任何一个元素，则该元素会被从队列中删除
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_18\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_18)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_18) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_18)
 
 
 > ### [任务十九：基础JavaScript练习（二）](http://ife.baidu.com/task/detail?taskId=19)
@@ -171,7 +171,7 @@ let cityKeyData = Object.keys(aqiSourceData[city]);
 队列展现方式变化[如图](http://7xrp04.com1.z0.glb.clouddn.com/task_2_19_1.jpg)，直接用高度表示数字大小
 实现一个简单的排序功能，如冒泡排序（不限制具体算法），用可视化的方法表达出来
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_19\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_19)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_19) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_19)
 
 
 > ### [任务二十：基础JavaScript练习（三）](http://ife.baidu.com/task/detail?taskId=20)
@@ -186,7 +186,7 @@ let cityKeyData = Object.keys(aqiSourceData[city]);
 
 增加一个查询文本输入框，和一个查询按钮，当点击查询时，将查询词在各个元素内容中做模糊匹配，将匹配到的内容进行特殊标识，如文字颜色等。举例，内容中有 abcd，查询词为 ab 或 bc，则该内容需要标识
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_20\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_20)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_20) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_20)
 
 
 > ### [任务二十一：基础JavaScript练习（四）](http://ife.baidu.com/task/detail?taskId=21)
@@ -209,7 +209,7 @@ Tag 不能有重复的，遇到重复输入的 Tag，自动忽视。
 每个爱好内容需要做 trim 处理
 最多允许 10 个兴趣爱好，多于 10 个时，按照录入的先后顺序，把最前面的删掉
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_21\index.html) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_21)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_21) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_21)
 
 
 > ### 任务总结
@@ -338,7 +338,7 @@ Student.prototype = createObject(Person.prototype);
 2.每个英文字母、数字、英文符号长度为 1
 3.每个汉字，中文符号长度为 2
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_29) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_29)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_29) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_29)
 
 
 > ### [任务三十：表单（二）多个表单项的动态校验](http://ife.baidu.com/task/detail?taskId=30)
@@ -354,7 +354,7 @@ Student.prototype = createObject(Person.prototype);
 4.校验结果错误时，表单边框显示红色，并在下方显示验证错误的描述文字
 5.点击提交按钮时，对页面中所有输入进行校验，校验结果显示方式同上。若所有表单校验通过，弹窗显示“提交成功”，否则显示“提交失败”
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_30) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_30)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_30) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_30)
 
 
 > ### [任务三十一：表单（三）联动](http://ife.baidu.com/task/detail?taskId=31)
@@ -367,7 +367,7 @@ Student.prototype = createObject(Person.prototype);
 2.学校下拉菜单里的学校名单均为城市下拉菜单中所选的城市中的大学，当城市发生变化时，学校一起发生变化
 3.城市及学校的数据随意编造即可，无需真实完整
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_31) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_31)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_31) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_31)
 
 
 > ### [任务三十二：表单（四）实现表单自动生成工厂](http://ife.baidu.com/task/detail?taskId=32)
@@ -389,7 +389,7 @@ Student.prototype = createObject(Person.prototype);
 基于该配置项，实现一套逻辑，可以自动生成表单的展现、交互、验证
 使用你制作的表单工厂，在一个页面上创建两套样式不同的表单
 
-[Demo](\Baidu_IFE_2016Spring\Stage_2\Task_32) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_32)
+[Demo](http://dwayneten.com/Baidu_IFE_2016Spring/Stage_2/Task_32) | [Source](https://github.com/Dwayneten/Baidu_IFE_2016Spring/tree/gh-pages/Stage_2/Task_32)
 
 > ### 任务总结
 
